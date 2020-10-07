@@ -1,0 +1,2 @@
+﻿36641
+/home/tinkertoe/Godot/Godot_v3.2.1-stable_mono_x11.64

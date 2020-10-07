@@ -1,0 +1,311 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/theme.tres" type="Theme" id=1]
+[ext_resource path="res://src/Main.cs" type="Script" id=2]
+[ext_resource path="res://src/Deck.cs" type="Script" id=3]
+[ext_resource path="res://src/Twitch.cs" type="Script" id=4]
+[ext_resource path="res://src/OBS.cs" type="Script" id=5]
+
+[node name="Settings" type="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+tab_align = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Deck" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 43.0
+margin_right = -5.0
+margin_bottom = -5.0
+alignment = 1
+script = ExtResource( 3 )
+
+[node name="Flexbox" type="HBoxContainer" parent="Deck"]
+margin_top = 32.0
+margin_right = 490.0
+margin_bottom = 244.0
+alignment = 1
+
+[node name="KeysContainer" type="HBoxContainer" parent="Deck/Flexbox"]
+margin_right = 490.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="KeysGrid" type="GridContainer" parent="Deck/Flexbox/KeysContainer"]
+margin_left = 139.0
+margin_right = 351.0
+margin_bottom = 212.0
+columns = 4
+
+[node name="Button1" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_right = 50.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+text = "A"
+
+[node name="Button2" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 54.0
+margin_right = 104.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+text = "B"
+
+[node name="Button3" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 108.0
+margin_right = 158.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+text = "C"
+
+[node name="Button4" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 162.0
+margin_right = 212.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+text = "D"
+
+[node name="Button5" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_top = 54.0
+margin_right = 50.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 50, 50 )
+text = "E"
+
+[node name="Button6" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 54.0
+margin_top = 54.0
+margin_right = 104.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 50, 50 )
+text = "F"
+
+[node name="Button7" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 108.0
+margin_top = 54.0
+margin_right = 158.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 50, 50 )
+text = "G"
+
+[node name="Button8" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 162.0
+margin_top = 54.0
+margin_right = 212.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 50, 50 )
+text = "H"
+
+[node name="Button9" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_top = 108.0
+margin_right = 50.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 50, 50 )
+text = "I"
+
+[node name="Button10" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 54.0
+margin_top = 108.0
+margin_right = 104.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 50, 50 )
+text = "J"
+
+[node name="Button11" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 108.0
+margin_top = 108.0
+margin_right = 158.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 50, 50 )
+text = "K"
+
+[node name="Button12" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 162.0
+margin_top = 108.0
+margin_right = 212.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 50, 50 )
+text = "L"
+
+[node name="Button13" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_top = 162.0
+margin_right = 50.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 50, 50 )
+text = "M"
+
+[node name="Button14" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 54.0
+margin_top = 162.0
+margin_right = 104.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 50, 50 )
+text = "N"
+
+[node name="Button15" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 108.0
+margin_top = 162.0
+margin_right = 158.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 50, 50 )
+text = "O"
+
+[node name="Button16" type="Button" parent="Deck/Flexbox/KeysContainer/KeysGrid"]
+margin_left = 162.0
+margin_top = 162.0
+margin_right = 212.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 50, 50 )
+text = "P"
+
+[node name="ActionContainer" type="HBoxContainer" parent="Deck/Flexbox"]
+visible = false
+margin_left = 247.0
+margin_right = 490.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ActionContainer" type="VBoxContainer" parent="Deck/Flexbox/ActionContainer"]
+margin_left = 121.0
+margin_right = 121.0
+margin_bottom = 212.0
+alignment = 1
+
+[node name="OBS" type="VBoxContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 43.0
+margin_right = -5.0
+margin_bottom = -5.0
+alignment = 1
+script = ExtResource( 5 )
+
+[node name="Flexbox" type="HBoxContainer" parent="OBS"]
+margin_top = 33.0
+margin_right = 490.0
+margin_bottom = 243.0
+alignment = 1
+
+[node name="SettingsContainer" type="HBoxContainer" parent="OBS/Flexbox"]
+margin_right = 490.0
+margin_bottom = 210.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="SettingsContainer" type="VBoxContainer" parent="OBS/Flexbox/SettingsContainer"]
+margin_left = 119.0
+margin_right = 371.0
+margin_bottom = 210.0
+alignment = 1
+
+[node name="Heading" type="Label" parent="OBS/Flexbox/SettingsContainer/SettingsContainer"]
+margin_right = 252.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+text = "Websocket Settings"
+
+[node name="WebsocketURLLabel" type="Label" parent="OBS/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 54.0
+margin_right = 252.0
+margin_bottom = 90.0
+text = "Websocket URL"
+
+[node name="WebsocketURL" type="LineEdit" parent="OBS/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 94.0
+margin_right = 252.0
+margin_bottom = 130.0
+placeholder_text = "ws://localhost:4444"
+
+[node name="WebsocketPasswordLabel" type="Label" parent="OBS/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 134.0
+margin_right = 252.0
+margin_bottom = 170.0
+text = "Websocket Password"
+
+[node name="WebsocketPassword" type="LineEdit" parent="OBS/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 174.0
+margin_right = 252.0
+margin_bottom = 210.0
+
+[node name="Twitch" type="VBoxContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 43.0
+margin_right = -5.0
+margin_bottom = -5.0
+alignment = 1
+script = ExtResource( 4 )
+
+[node name="Flexbox" type="HBoxContainer" parent="Twitch"]
+margin_top = 33.0
+margin_right = 490.0
+margin_bottom = 243.0
+alignment = 1
+
+[node name="SettingsContainer" type="HBoxContainer" parent="Twitch/Flexbox"]
+margin_right = 490.0
+margin_bottom = 210.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="SettingsContainer" type="VBoxContainer" parent="Twitch/Flexbox/SettingsContainer"]
+margin_left = 131.0
+margin_right = 359.0
+margin_bottom = 210.0
+alignment = 1
+
+[node name="Heading" type="Label" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = -1.0
+margin_right = 228.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 0, 50 )
+text = "Twitch API Settings"
+
+[node name="TwitchUsernameLabel" type="Label" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 54.0
+margin_right = 228.0
+margin_bottom = 90.0
+text = "Username"
+
+[node name="TwitchUsername" type="LineEdit" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 94.0
+margin_right = 228.0
+margin_bottom = 130.0
+
+[node name="TwitchAccessTokenLabel" type="Label" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 134.0
+margin_right = 228.0
+margin_bottom = 170.0
+text = "Access Token"
+
+[node name="TwitchAccessTokenContainer" type="HBoxContainer" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer"]
+margin_top = 174.0
+margin_right = 228.0
+margin_bottom = 210.0
+
+[node name="GetButton" type="Button" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer/TwitchAccessTokenContainer"]
+margin_right = 52.0
+margin_bottom = 36.0
+text = "Get"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TwitchAccessToken" type="LineEdit" parent="Twitch/Flexbox/SettingsContainer/SettingsContainer/TwitchAccessTokenContainer"]
+margin_left = 56.0
+margin_right = 228.0
+margin_bottom = 36.0
+size_flags_horizontal = 3
+editable = false
+secret = true

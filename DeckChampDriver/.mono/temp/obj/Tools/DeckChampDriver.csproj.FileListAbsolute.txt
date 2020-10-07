@@ -1,0 +1,6 @@
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/bin/Tools/DeckChampDriver.dll
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/bin/Tools/DeckChampDriver.pdb
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/obj/Tools/DeckChampDriver.csprojAssemblyReference.cache
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/obj/Tools/DeckChampDriver.csproj.CoreCompileInputs.cache
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/obj/Tools/DeckChampDriver.dll
+/media/tinkertoe/workstation/Software Projects/DeckChamp/DeckChampDriver/.mono/temp/obj/Tools/DeckChampDriver.pdb
